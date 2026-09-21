@@ -14,7 +14,28 @@ To write a Python program that demonstrates class inheritance by creating a pare
 7. Output will demonstrate method overriding: printing `"fish"` and `"shark"` accordingly.
 
 ## 💻 PROGRAM:
+```
+class A:
+    def __init__(self, a):
+        self.a = a
+
+    def __lt__(self, o):
+        if self.a < o.a:
+            return "ob1 is less than ob2"
+        else:
+            return "ob2 is less than ob1"
+
+ob1 = A(10)
+ob2 = A(20)
+
+print(ob1 < ob2)
+
+```
 
 ## OUTPUT
+<img width="1912" height="760" alt="image" src="https://github.com/user-attachments/assets/2d4bf7fa-a7b9-455e-bccd-0886da293e20" />
+
+
 
 ## RESULT
+The program creates a class A, overloads the < operator using the lt() method, and compares two objects. Depending on the values stored in the objects, it returns a custom message.

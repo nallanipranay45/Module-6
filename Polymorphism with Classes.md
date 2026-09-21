@@ -26,7 +26,33 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+```
+class Beans:
+    def type(self):
+        print("Vegetable")
+    def color(self):
+        print("Green")
+
+class Mango:
+    def type(self):
+        print("Fruit")
+    def color(self):
+        print("Yellow")
+
+def func(obj):
+    obj.type()
+    obj.color()
+
+obj_beans = Beans()
+obj_mango = Mango()
+
+func(obj_beans)
+func(obj_mango)
+```
 
 ## Output
+<img width="1917" height="782" alt="image" src="https://github.com/user-attachments/assets/4ac8e00b-fed3-4306-b216-88adf58c12c7" />
+
 
 ## Result
+The program defines two classes, Beans and Mango, each with type() and color() methods. A generic function func(obj) calls these methods on any object passed to it,
